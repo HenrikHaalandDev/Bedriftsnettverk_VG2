@@ -11,12 +11,12 @@
 
 
 ## 1. Plan
-- The plan is to make a infrastructure for a small business enterprise, with similar functionality with other companies such as ``Stiftelsen Pilar``.
+- The plan is to make an infrastructure for a small business enterprise, with similar functionality with other companies such as ``Stiftelsen Pilar``.
 
 
 
 ## 2. Before preparation
-- The main task is to create the infrastrucutre using only virtual machines (VMs). The reasoning why I want to start with VMs and not pysical machines (PMs) is that VMs are way safer in the way that if something goes sideways, I can just rollback to my last *"checkpoint"* and VMs are supposed to also be better for the goal achievement *(måloppnåelsen)*. On pysical machines its way harder to revert back befor I did the change, sometimes its not even possible to revert back from a big change.
+- The main task is to create the infrastructure using only virtual machines (VMs). The reasoning why I want to start with VMs and not physical machines (PMs) is that VMs are way safer in the way that if something goes sideways, I can just rollback to my last *"checkpoint"* and VMs are supposed to also be better for the goal achievement *(måloppnåelsen)*. On pysical machines it is way harder to revert back before I did the change, sometimes it's not even possible to revert back from a big change.
 
 
 
@@ -28,7 +28,7 @@ The infrastructure will be containing:
 
 ### 3.1 Virtual infrastructure
 Main objective is making the virtual infrastructure
-- ``1 Firwall`` with ``OPENsense``
+- ``1 Firewall`` with ``OPENsense``
 - ``2 Servers`` with ``Windows Server 2022``. 
   - **SRV-01**: ``Primary server``, ``AD DS``, ``DNS`` & ``DHCP``
   - **SRV-02**:``Secondary server (backup server)``, ``AD DS`` & ``DNS``
@@ -39,8 +39,8 @@ Main objective is making the virtual infrastructure
   - **ClientPC-04**: ``macOS`` 
 
 ### 3.2 Pysical infrastructure
-After making the virtual infrastrucutre I will be creating the exact same infrastrucutre just pysically **IF I HAVE TIME**. For extra safety measures I will be doing every big change on the VMs so I dont mess anything up on the pysical machines.
-- ``1 Firwall`` with ``OPENsense``. **This will be a VM.**
+After making the virtual infrastructure I will be creating the exact same infrastructure just pysically **IF I HAVE TIME**. For extra safety measures I will be doing every big change on the VMs so I don't mess anything up on the physical machines.
+- ``1 Firewall`` with ``OPENsense``. **This will be a VM.**
 - ``2 Servers`` with ``Windows Server 2022``. 
   - **SRV-01**: ``Primary server``, ``AD DS``, ``DNS`` & ``DHCP``
   - **SRV-02**:``Secondary server (backup server)``, ``AD DS`` & ``DNS``
@@ -68,7 +68,7 @@ Things I might learn from this:
 - How to use Hyper-V
   - How to create many ``VMs``
   - How to create ``virtual switches``
-- Use whats the ``best practice``
+- Use what's the ``best practice``
 
 
 
