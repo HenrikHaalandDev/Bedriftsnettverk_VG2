@@ -1,4 +1,4 @@
-### Small business enterprise
+### Infrastructure for a Indie Company
 
 ### Table of content
 - [1. Plan](#1-plan)
@@ -11,7 +11,7 @@
 
 
 ## 1. Plan
-- The plan is to make an infrastructure for a small business enterprise, with similar functionality with other companies such as ``Stiftelsen Pilar``.
+- The plan is to make an infrastructure for a small indie company, with similar functionality with other companies such as ``Stiftelsen Pilar``.
 
 
 
@@ -28,7 +28,7 @@ The infrastructure will be containing:
 
 ### 3.1 Virtual infrastructure
 Main objective is making the virtual infrastructure
-- ``1 Firewall`` with ``OPENsense``
+- ``1 Firewall`` with ``OPNsense``
 - ``2 Servers`` with ``Windows Server 2022``. 
   - **SRV-01**: ``Primary server``, ``AD DS``, ``DNS`` & ``DHCP``
   - **SRV-02**:``Secondary server (backup server)``, ``AD DS`` & ``DNS``
@@ -40,7 +40,7 @@ Main objective is making the virtual infrastructure
 
 ### 3.2 Pysical infrastructure
 After making the virtual infrastructure I will be creating the exact same infrastructure just pysically **IF I HAVE TIME**. For extra safety measures I will be doing every big change on the VMs so I don't mess anything up on the physical machines.
-- ``1 Firewall`` with ``OPENsense``. **This will be a VM.**
+- ``1 Firewall`` with ``OPNsense``. **This will be a VM.**
 - ``2 Servers`` with ``Windows Server 2022``. 
   - **SRV-01**: ``Primary server``, ``AD DS``, ``DNS`` & ``DHCP``
   - **SRV-02**:``Secondary server (backup server)``, ``AD DS`` & ``DNS``
