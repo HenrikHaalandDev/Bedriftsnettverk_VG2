@@ -5,7 +5,7 @@
 - [2. Before preparation](#2-before-preparation)
 - [3. Needed hardware](#3-needed-hardware)
   - [3.1 Virtual infrastructure](#31-virtual-infrastructure)
-  - [3.2 Pysical infrastructure](#32-pysical-infrastructure)
+  - [3.2 Physical infrastructure](#32-physical-infrastructure)
 - [4. Learning points](#4-learning-points)
 
 
@@ -16,7 +16,7 @@
 
 
 ## 2. Before preparation
-- The main task is to create the infrastructure using only virtual machines (VMs). The reasoning why I want to start with VMs and not physical machines (PMs) is that VMs are way safer in the way that if something goes sideways, I can just rollback to my last *"checkpoint"* and VMs are supposed to also be better for the goal achievement *(måloppnåelsen)*. On pysical machines it is way harder to revert back before I did the change, sometimes it's not even possible to revert back from a big change.
+- The main task is to create the infrastructure using only virtual machines (VMs). The reasoning behind starting with VMs rather than physical machines (PMs) is that VMs are way safer. If something goes sideways, I can just rollback to my last *"checkpoint"* and VMs are supposed to also be better for the goal achievement *(måloppnåelsen)*. On physical machines it is way harder to revert back to before I did the change, sometimes it's not even possible to revert back from a big change.
 
 
 
@@ -38,8 +38,8 @@ Main objective is making the virtual infrastructure
   - **ClientPC-03**: ``Windows 10``
   - **ClientPC-04**: ``macOS`` 
 
-### 3.2 Pysical infrastructure
-After making the virtual infrastructure I will be creating the exact same infrastructure just pysically **IF I HAVE TIME**. For extra safety measures I will be doing every big change on the VMs so I don't mess anything up on the physical machines.
+### 3.2 Physical infrastructure
+After making the virtual infrastructure I will be creating the exact same infrastructure just physically **IF I HAVE TIME**. For extra safety measures I will be doing every big change on the VMs so I don't mess anything up on the physical machines.
 - ``1 Firewall`` with ``OPNsense``. **This will be a VM.**
 - ``2 Servers`` with ``Windows Server 2022``. 
   - **SRV-01**: ``Primary server``, ``AD DS``, ``DNS`` & ``DHCP``
@@ -68,7 +68,7 @@ Things I might learn from this:
 - How to use Hyper-V
   - How to create many ``VMs``
   - How to create ``virtual switches``
-- Use what's the ``best practice``
+- Find and use the ``best practice``
 
 
 
