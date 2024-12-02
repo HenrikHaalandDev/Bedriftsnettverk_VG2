@@ -55,7 +55,7 @@ After making the virtual infrastrucutre I will be creating the exact same infras
 
 
 ## 4. Learning points
-I think I will learn several things from this:
+Things I might learn from this:
 - How to handle memory sticks
   - ``Format Hard Drives``
   - ``Bootable Drives (Using Rufus)``
@@ -65,6 +65,10 @@ I think I will learn several things from this:
 - Infrastructure planning
 - The meaning and functions of ``AD DS``, ``DNS`` & ``DHCP``
 - Security measures
+- How to use Hyper-V
+  - How to create many ``VMs``
+  - How to create ``virtual switches``
+- Use whats the ``best practice``
 
 
 
