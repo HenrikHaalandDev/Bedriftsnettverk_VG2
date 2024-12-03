@@ -15,6 +15,7 @@
       - [3.3.1.5 ``Windows 10``](#3315-windows-10)
       - [3.3.1.6 ``macOS``](#3316-macos)
 - [4. Learning Points](#4-learning-points)
+  - [5. Documentation through images](#5-documentation-through-images)
 
 ## 1. Plan
 - The plan is to create an infrastructure for a small indie company with functionality similar to other companies such as ``Stiftelsen Pilar``.
@@ -148,3 +149,9 @@ Things I might learn from this:
   - How to create many ``VMs``
   - How to create ``virtual switches``
 - Find and use ``best practices``
+
+### 5. Documentation through images
+
+<img src="images\IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
+
+<img src="images\6-VMs.png" alt="6 VMs at once" />
