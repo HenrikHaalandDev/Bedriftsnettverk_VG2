@@ -155,3 +155,4 @@ Things I might learn from this:
 <img src="images\IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
 
 <img src="images\6-VMs.png" alt="6 VMs at once" />
+<img src="images\installation_of_OS.png" alt="Installing all the OS Systems" />
