@@ -132,7 +132,7 @@ These apply to both VMs and PMs.
 - **Network**
   - An internet connection is required for updates, features, and downloading apps from the Mac App Store.
 
-<img src="IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
+<img src="images/IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
 
 ## 4. Learning Points
 Things I might learn from this:
