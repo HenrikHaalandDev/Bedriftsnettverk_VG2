@@ -167,20 +167,20 @@ Things I might learn from this:
 This is all the sources I used to learn
 
 #### 6.1 Youtube
-- [KELVGLOBAL ICT](https://www.youtube.com/@Kelvglobal)
+- [``KELVGLOBAL ICT``](https://www.youtube.com/@Kelvglobal)
   - [How to add a Secondary Domain Controller to existing domain | Windows Server 2019](https://www.youtube.com/watch?v=dm3pTJGe0fo&list=PLMhhFwUvM0p7Y00NDmXHDShrUxRc0t6WL)
-- [MSFT WebCast](https://www.youtube.com/@MSFTWebCast)
+- [``MSFT WebCast``](https://www.youtube.com/@MSFTWebCast)
   - [How to Set up Secondary DNS Server in Windows Server 2019](https://www.youtube.com/watch?v=g9w8apZnbg0&list=PLMhhFwUvM0p7Y00NDmXHDShrUxRc0t6WL&index=3)
-- [NETVN82](https://www.youtube.com/NETVN82)
+- [``NETVN82``](https://www.youtube.com/NETVN82)
   - [hvordan bygge en filserver for liten organisasjon eller liten bedrift](https://www.youtube.com/watch?v=6x4-vNmzuqU&list=PLMhhFwUvM0p7Y00NDmXHDShrUxRc0t6WL&index=3)
-- [ittaster](https://www.youtube.com/@ittaster)
+- [``ittaster``](https://www.youtube.com/@ittaster)
   - [How to Share Files & Folders | Windows Server 2022](https://www.youtube.com/watch?v=jw8NQBZjJ7A&t=893s)
 
 #### 6.2 Websites
-- [Microsoft Learn]([learn.microsoft.com](https://learn.microsoft.com/en-us/))
+- [``Microsoft Learn``](https://learn.microsoft.com/en-us/)
   - [Hardware requirements for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements?tabs=storage&pivots=windows-server-2022)
   - [Coreinfo v3.6](https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo)
   - [Naming conventions in Active Directory for computers, domains, sites, and OUs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/naming-conventions-for-computer-domain-site-ou)
   - [Find Windows 11 specs, features, and computer requirements](https://www.microsoft.com/en-us/windows/windows-11-specifications?r=1)
-- [OPNsense documentation](https://docs.opnsense.org/index.html)
+- [``OPNsense documentation``](https://docs.opnsense.org/index.html)
   - [Hardware sizing & setup](https://docs.opnsense.org/manual/hardware.html#hardware-requirements)
