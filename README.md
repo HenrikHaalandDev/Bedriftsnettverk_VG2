@@ -156,3 +156,5 @@ Things I might learn from this:
 
 <img src="images\6-VMs.png" alt="6 VMs at once" />
 <img src="images\installation_of_OS.png" alt="Installing all the OS Systems" />
+
+<img src="images\primaryServerInstallation.png" alt="Installing AD DS, DNS and DHCP on primary server" />
