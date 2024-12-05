@@ -1,4 +1,4 @@
-### Infrastructure for an Indie Company
+### Infrastructure for a small Company
 
 ### Table of Contents
 - [1. Plan](#1-plan)
@@ -15,10 +15,10 @@
       - [3.3.1.5 ``Windows 10``](#3315-windows-10)
       - [3.3.1.6 ``macOS``](#3316-macos)
 - [4. Learning Points](#4-learning-points)
-  - [5. Documentation through images](#5-documentation-through-images)
-  - [6. Source List](#6-source-list)
-    - [6.1 Youtube](#61-youtube)
-    - [6.2 Websites](#62-websites)
+- [5. Documentation through images](#5-documentation-through-images)
+- [6. Source List](#6-source-list)
+  - [6.1 Youtube](#61-youtube)
+  - [6.2 Websites](#62-websites)
 
 ## 1. Plan
 - The plan is to create an infrastructure for a small indie company with functionality similar to other companies such as ``Stiftelsen Pilar``.
@@ -153,7 +153,7 @@ Things I might learn from this:
   - How to create ``virtual switches``
 - Find and use ``best practices``
 
-### 5. Documentation through images
+## 5. Documentation through images
 
 <img src="images\IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
 <img src="images\6-VMs.png" alt="6 VMs at once" />
@@ -162,10 +162,10 @@ Things I might learn from this:
 <img src="images\secondaryInstallation.png" alt="Installing AD DS and DNS on secondary server">
 
 
-### 6. Source List
+## 6. Source List
 This is all the sources I used to learn
 
-#### 6.1 Youtube
+### 6.1 Youtube
 - [``KELVGLOBAL ICT``](https://www.youtube.com/@Kelvglobal)
   - [How to add a Secondary Domain Controller to existing domain | Windows Server 2019](https://www.youtube.com/watch?v=dm3pTJGe0fo&list=PLMhhFwUvM0p7Y00NDmXHDShrUxRc0t6WL)
 - [``MSFT WebCast``](https://www.youtube.com/@MSFTWebCast)
@@ -175,7 +175,7 @@ This is all the sources I used to learn
 - [``ittaster``](https://www.youtube.com/@ittaster)
   - [How to Share Files & Folders | Windows Server 2022](https://www.youtube.com/watch?v=jw8NQBZjJ7A&t=893s)
 
-#### 6.2 Websites
+### 6.2 Websites
 - [``Microsoft Learn``](https://learn.microsoft.com/en-us/)
   - [Hardware requirements for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements?tabs=storage&pivots=windows-server-2022)
   - [Coreinfo v3.6](https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo)
