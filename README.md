@@ -14,11 +14,17 @@
       - [3.3.1.4 ``Linux Ubuntu``](#3314-linux-ubuntu)
       - [3.3.1.5 ``Windows 10``](#3315-windows-10)
       - [3.3.1.6 ``macOS``](#3316-macos)
-- [4. Learning Points](#4-learning-points)
-- [5. Documentation through images](#5-documentation-through-images)
-- [6. Source List](#6-source-list)
-  - [6.1 Youtube](#61-youtube)
-  - [6.2 Websites](#62-websites)
+- [4. Step-by-step guide](#4-step-by-step-guide)
+  - [4.1 Preparation](#41-preparation)
+  - [4.2 Getting Hyper-V ready](#42-getting-hyper-v-ready)
+    - [4.2.1 Virtual Switch](#421-virtual-switch)
+    - [4.2.2 Virtual machine creation](#422-virtual-machine-creation)
+      - [4.2.2.1 OPNsense](#4221-opnsense)
+- [5. Learning Points](#5-learning-points)
+- [6. Documentation through images](#6-documentation-through-images)
+- [7. Source List](#7-source-list)
+  - [7.1 Youtube](#71-youtube)
+  - [7.2 Websites](#72-websites)
 
 ## 1. Plan
 - The plan is to create an infrastructure for a small indie company with functionality similar to other companies such as ``Stiftelsen Pilar``.
@@ -137,7 +143,48 @@ These apply to both VMs and PMs.
 
 <img src="images/IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
 
-## 4. Learning Points
+
+## 4. Step-by-step guide
+This will be a detailed step-by-step guide how to create your own infrastructure for a small company/enterprise on **``VIRTUAL MACHINES``**.
+
+### 4.1 Preparation
+You will need:
+- [Hyper-V](https://techcommunity.microsoft.com/blog/educatordeveloperblog/step-by-step-enabling-hyper-v-for-use-on-windows-11/3745905)
+- [OPNsense ISO-file *(click to download ISO file)*](https://mirror.ams1.nl.leaseweb.net/opnsense/releases/24.7/OPNsense-24.7-dvd-amd64.iso.bz2) | [OPNsense](https://opnsense.org/)
+- [Windows Server 2022 ISO-file *(click to download ISO file)*](https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US) | [Microsoft.com](https://www.microsoft.com/nb-no/)
+- [Windows 10 ISO-file *(click to download ISO file)*](https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x64v1.iso?t=6c2378c5-aabe-4600-837d-a3860200e5df&P1=1733848958&P2=601&P3=2&P4=eT39ucuqfxjTHOdglTgIT0v4Y10szWvg%2bBryHLV7muDbACkvKf%2fz6q7cbbTQjHQiFOk0FwHUHZMYy%2b5aAMEbZDpBNSq9kKjNHH4brydnRqUDzrPU1drHOYYLoI8wjHAoOlGgwH7BCpwhLaBZAkphbxLuwKaiXWdhYFujprtAeS%2f%2faCQBy2xvSNZlXOda%2fuYyle02R0nbhji8vZA9uXUfnZuNjRyNCMM57PMLhFqv%2b%2bDXuP8xjU7jyL63hglSgWEJnmgW2DF0vm7LRZ1E8SKfVPOEHkvhqTQ%2fB2I70fu3TE38swX0D1Fk9G7GF0d%2bHY%2f8qT%2fxUc7VmlqjqG48s6uO%2bg%3d%3d) | [Microsoft.com](https://www.microsoft.com/nb-no/)
+
+### 4.2 Getting Hyper-V ready
+Before we get into creating the server, we need to make Hyper-V ready
+
+#### 4.2.1 Virtual Switch
+1. Click ``Virtual Switch Manager...``
+2. Click ``New virtual network switch``
+3. Create an ``external switch`` by clicking ``External``, then click ``Create Virtual Switch``
+4. **External Switch**
+   1. Name the Switch ``WAN``
+   2. For **connection type** choose ``External network`` then ``Realtek PCIe GbE Family Controller``
+   3. Click ``Apply``
+   4. Click ``OK``
+
+#### 4.2.2 Virtual machine creation
+We will now be creating each virtual machine
+##### 4.2.2.1 OPNsense
+1. Click ``New`` then ``Virtual Machine``
+2. **Before You Begin** | Click ``Next``
+3. **Specify Name and Location** | Name your Virtual machines (e.g., OPNsense FW, OPNsense firewall, firewall), click ``next`` after naming your virtual machine
+4. **Specify Generation** | Choose ``Generation 2``, then click ``Next``
+5. **Assign Memory** | For the OPNsense, we will be needing minimum 2GB (2048MB) memory. Type ``2048`` or higher, then click ``Next``
+6. **Configure Networking** | Choose ``WAN``, then click ``Next``
+7. **Connect Virtual Hard Disk** | If needed, change location of where the virtual driver is stored, if not, let it be. For **size**, type ``2GB``. After configuring, click ``Next``
+8. **Installation Options** | Select ``Install an operating system from a bootable image file``. Find the ``OPNsense ISO file`` and select it. After that, click ``Next``
+9. **Summary** | Click ``Finish``
+10. Right Click the newly created virtual machine and click ``Settings``
+11. Find ``Add Hardware`` and add ``Network Adapter``, then click ``Add``
+12. In the newly created network adapter choose ``WAN``. After that, click ``VLAN ID`` and type in your ID *(in this example I will be using 320. Your ID can be whatever number of your choice)*. Then click ``Apply``
+13. Click ``Ok``
+
+## 5. Learning Points
 Things I might learn from this:
 - How to handle memory sticks
   - ``Format Hard Drives``
@@ -153,7 +200,7 @@ Things I might learn from this:
   - How to create ``virtual switches``
 - Find and use ``best practices``
 
-## 5. Documentation through images
+## 6. Documentation through images
 
 <img src="images\IndieCompanyInfrastructure.png" alt="Picture of infrastructure" />
 <img src="images\6-VMs.png" alt="6 VMs at once" />
@@ -162,10 +209,10 @@ Things I might learn from this:
 <img src="images\secondaryInstallation.png" alt="Installing AD DS and DNS on secondary server">
 
 
-## 6. Source List
+## 7. Source List
 This is all the sources I used to learn
 
-### 6.1 Youtube
+### 7.1 Youtube
 - [``KELVGLOBAL ICT``](https://www.youtube.com/@Kelvglobal)
   - [How to add a Secondary Domain Controller to existing domain | Windows Server 2019](https://www.youtube.com/watch?v=dm3pTJGe0fo&list=PLMhhFwUvM0p7Y00NDmXHDShrUxRc0t6WL)
 - [``MSFT WebCast``](https://www.youtube.com/@MSFTWebCast)
@@ -175,7 +222,7 @@ This is all the sources I used to learn
 - [``ittaster``](https://www.youtube.com/@ittaster)
   - [How to Share Files & Folders | Windows Server 2022](https://www.youtube.com/watch?v=jw8NQBZjJ7A&t=893s)
 
-### 6.2 Websites
+### 7.2 Websites
 - [``Microsoft Learn``](https://learn.microsoft.com/en-us/)
   - [Hardware requirements for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements?tabs=storage&pivots=windows-server-2022)
   - [Coreinfo v3.6](https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo)
