@@ -162,10 +162,10 @@ Before we get into creating the server, we need to make Hyper-V ready
 2. Click ``New virtual network switch``
 3. Create an ``external switch`` by clicking ``External``, then click ``Create Virtual Switch``
 4. **External Switch**
-   1. Name the Switch ``WAN``
-   2. For **connection type** choose ``External network`` then ``Realtek PCIe GbE Family Controller``
-   3. Click ``Apply``
-   4. Click ``OK``
+  1. Name the Switch ``WAN``
+  2. For **connection type** choose ``External network`` then ``Realtek PCIe GbE Family Controller``
+  3. Click ``Apply``
+  4. Click ``OK``
 
 #### 4.2.2 Virtual machine creation
 We will now be creating each virtual machine
